@@ -1,4 +1,4 @@
-![](https://github.com/Girl-Code-It/Opportunity-Calendar-Backend/raw/master/assets/about.png)
+![](https://github.com/Girl-Code-It/Opportunity-Calendar-Backend/raw/master/assets/oppcal.png)
 
 ## Opportunity Calendar
 
