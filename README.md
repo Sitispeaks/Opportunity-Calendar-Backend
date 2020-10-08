@@ -9,16 +9,18 @@ Opportunity Calendar is the one-stop place to refer important opportunites avail
 1. [Install](#install)
 2. [Introduction](#introduction)
 3. [Technology Stack](#Technology-Stack)
-4. [Bugs and Feature Requests](#Bugs-and-Feature-Requests)
-5. [Contributing](#contributing)
-6. [Copyright and license](#copyright-and-license)
+4. [Documentation](#Documentation)
+5. [Bugs and Feature Requests](#Bugs-and-Feature-Requests)
+6. [Contributing](#contributing)
+7. [Copyright and license](#copyright-and-license)
 
 <h2 align="center">Install</h2>
 
 ```
 # make migrations
-$ python manage.py migrate
 $ python manage.py makemigrations
+$ python manage.py migrate
+
 
 # Start application
 $ python manage.py runserver
@@ -28,13 +30,13 @@ $ python manage.py runserver
 
 <h2 align="center">Introduction</h2>
 Opportunity Calendar provides instant information on newly posted opportunuties for techies. There are times when applicants miss deadlines or get to know about available opportunties only after the deadline of their application passes. 
-Updates about following opportunities are available: 
+Updates about following opportunities are available:
 
 - Full Time Job Opportunties
 - Internship Opportunties
 - Scholarships
-- Tech-Conferences 
-- Coding Competitions 
+- Tech-Conferences
+- Coding Competitions
 - Hackathons
 
 <h2 align="center">Technology Stack</h2>
@@ -42,6 +44,13 @@ Updates about following opportunities are available:
 - **Framework** - Django Rest Framework
 - **Database** - PostgreSQL
 - **Python** - version 3.8.2
+
+<h2 align="center">Documentation</h2>
+ 
+-   [**Models**](https://girlcodeit.atlassian.net/wiki/spaces/OC/pages/31916033/Models)
+-   [**List of APIS**]()
+-   [**Swagger Documentation**]()
+
 
 <h2 align="center">Bugs and Feature Requests</h2>
 
