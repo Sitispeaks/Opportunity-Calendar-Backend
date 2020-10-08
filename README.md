@@ -54,4 +54,4 @@ To get started have a look at our [documentation on contributing](https://github
 
 <h2 align="center">Copyright and license</h2>
 
-Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Backend/blob/main/LICENSE).
+Code released under the [MIT License](https://github.com/Girl-Code-It/Opportunity-Calendar-Backend/blob/develop/LICENSE).
