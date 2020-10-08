@@ -1,4 +1,7 @@
 # Contribution is fun! :green_heart:
+From opening a bug report to creating a pull request: every contribution is appreciated and welcome. If you're planning to implement a new feature or change the api please create an issue first. This way we can ensure that your precious work is not in vain.
+
+Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
 Happy Contributing :slightly_smiling_face:
 
