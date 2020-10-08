@@ -10,11 +10,15 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
 from pathlib import Path
+from dotenv import load_dotenv,find_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+load_dotenv(find_dotenv())
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -37,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'oppcal',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +73,11 @@ TEMPLATES = [
     },
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_METHODS = ("DELETE", "GET", "OPTIONS", "PATCH", "POST", "PUT")
+
+
 WSGI_APPLICATION = 'app.wsgi.application'
 
 
@@ -75,8 +86,12 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ["POSTGRES_DBNAME"],
+        "USER": os.environ["PORTGRES_USERNAME"],
+        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
+        "HOST": os.environ["POSTGRES_HOST"],
+        "PORT": os.environ["POSTGRES_PORT"],
     }
 }
 
