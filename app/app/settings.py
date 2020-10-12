@@ -95,6 +95,10 @@ DATABASES = {
     }
 }
 
+PAGINATION = {
+    "LIMIT": os.environ.get("DEFAULT_PAGE_LIMIT", 20),
+    "OFFSET": os.environ.get("DEFAULT_PAGE_OFFSET", 0),
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
