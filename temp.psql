@@ -1,4 +1,4 @@
-INSERT into Interns(id,jobId,jobURL,title,company,jobDescription,location,eligibilty,deadline) VALUES('1','113562','https://nutanix.eightfold.ai/careers?pid=1637065&location=India&domain=nutanix.com&recommended=1','SDE Intern','Nutanix','aaaaaaaaaaaaaaaaaaaaaaaELIGIBILTYaaaaaaaaaaaaaaaaaaaaaaaa','01/11/2020');
+INSERT into Interns(id,jobId,jobURL,title,company,jobDescription,location,eligibility,deadline) VALUES('1','113562','https://nutanix.eightfold.ai/careers?pid=1637065&location=India&domain=nutanix.com&recommended=1','SDE Intern','Nutanix','aaaaaaaaaaaaaaaaaaaaaaaeligibilityaaaaaaaaaaaaaaaaaaaaaaaa','01/11/2020');
 
 
 

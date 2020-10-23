@@ -1,8 +1,9 @@
-from django.db import models 
-from rest_framework import serializers
+from django.db import models
 from oppcal.models.competition import Competition
+from rest_framework import serializers
+
 
 class CompetitionSerializer(serializers.ModelSerializer):
     class Meta:
-        model:Competition
-        fields:['title','url','date','description','location','eligibility','deadline']
+        model = Competition
+        fields = "__all__"
