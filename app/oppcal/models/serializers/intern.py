@@ -1,8 +1,9 @@
-from django.db import models 
-from rest_framework import serializers
+from django.db import models
 from oppcal.models.intern import Intern
+from rest_framework import serializers
+
 
 class InternSerializer(serializers.ModelSerializer):
     class Meta:
-        model:Intern
-        fields:['jobId','jobURL','title','company','jobDescription','location','eligibility','deadline']
+        model = Intern
+        fields = '__all__'
