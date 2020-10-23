@@ -30,7 +30,7 @@ class CompetitionManager:
         raise APIException(serializer.errors, "New Competition could not be created")
 
     @staticmethod
-    def get_competition():
+    def get_competitions():
         queryset = Competition.objects.all()
         serializer = CompetitionSerializer(queryset, many=True)
         return serializer.data

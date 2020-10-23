@@ -4,5 +4,5 @@ from oppcal.models.job import Job
 
 class JobSerializer(serializers.ModelSerializer):
     class Meta:
-        model:Job
-        fields: '__all__'
+        model = Job
+        fields = '__all__'
