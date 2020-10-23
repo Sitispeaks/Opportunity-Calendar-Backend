@@ -6,4 +6,5 @@ from rest_framework import serializers
 class InternSerializer(serializers.ModelSerializer):
     class Meta:
         model = Intern
-        fields = '__all__'
+        fields = "__all__"
+

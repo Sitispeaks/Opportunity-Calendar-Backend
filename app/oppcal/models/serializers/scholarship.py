@@ -5,4 +5,4 @@ from oppcal.models.scholarship import Scholarship
 class ScholarshipSerializer(serializers.ModelSerializer):
     class Meta:
         model:Scholarship
-        fields:['title','url','description','eligibility','deadline']
+        fields: '__all__'

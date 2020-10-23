@@ -5,4 +5,4 @@ from oppcal.models.hackathon import Hackathon
 class HackathonSerializer(serializers.ModelSerializer):
     class Meta:
         model:Hackathon
-        fields:['title','url','date','description','location','eligibility','deadline']
+        fields: '__all__'

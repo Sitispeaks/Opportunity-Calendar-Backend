@@ -10,7 +10,7 @@ from rest_framework.exceptions import APIException
 class InternManager:
     @staticmethod
     def create_intern(
-        jobId, jobURL, title, company, jobDescription, location, eligibilty, deadline
+        jobId, jobURL, title, company, jobDescription, location, eligibility, deadline
     ):
         serializer = InternSerializer(
             data={
@@ -20,7 +20,7 @@ class InternManager:
                 "company": company,
                 "jobDescription": jobDescription,
                 "location": location,
-                "eligibility": eligibilty,
+                "eligibility": eligibility,
                 "deadline": deadline,
             }
         )
