@@ -4,8 +4,8 @@ from django.db import models
 
 class Intern(models.Model):
     jobId = models.CharField(max_length=200)
-    jobURL = models.CharField(max_length=300,blank=False)
-    title = models.CharField(max_length=200,blank=False)
+    jobURL = models.CharField(max_length=500,blank=False)
+    title = models.CharField(max_length=500,blank=False)
     company = models.CharField(max_length=200,blank=False)
     jobDescription = models.CharField(max_length=4000)
     location = models.CharField(max_length=200)

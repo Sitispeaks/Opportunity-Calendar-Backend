@@ -1,3 +1,7 @@
-from django.urls import path 
+from django.urls import path, include
 
-from oppcal.controllers.competition import 
+app_name = "oppcal"
+
+urlpatterns = [
+    path("intern/", include("oppcal.urls_folder.intern")),
+]
