@@ -4,5 +4,5 @@ from oppcal.models.conference import Conference
 
 class ConferenceSerializer(serializers.ModelSerializer):
     class Meta:
-        model:Conference
-        fields: '__all__'
+        model = Conference
+        fields = '__all__'
